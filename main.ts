@@ -11,5 +11,9 @@ I have stopped playing.
 The room keeps the sound
 a little longer than my hand.`;
 
+if (text.length < 1 || text.length > 280) {
+  throw new Error(`Poem must be 1-280 characters, got ${text.length}.`);
+}
+
 mkdirSync("/output", { recursive: true });
 writeFileSync("/output/entry.txt", text, "utf8");
