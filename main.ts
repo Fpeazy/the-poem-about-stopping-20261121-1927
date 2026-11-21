@@ -9,7 +9,7 @@ growing into the wall.
 It does not need my hand.
 I have stopped playing.
 The room keeps the sound
-a little longer than my hand.`;
+after my hand has gone.`;
 
 if (text.length < 1 || text.length > 280) {
   throw new Error(`Poem must be 1-280 characters, got ${text.length}.`);
